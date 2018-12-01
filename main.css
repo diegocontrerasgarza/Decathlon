@@ -1,0 +1,78 @@
+body{
+	width: 100%;
+	background-color: white;
+}
+.contenedor {
+	width: 80%;
+	margin: 7px auto;
+}
+.texto-sobre-imagen{
+	width: 100%;
+	margin-top: auto;
+	position: absolute;
+	top: 70%;
+
+}
+
+.texto-sobre-imagen h1{
+	text-align: center;
+	color: #FFFAFA;
+	font-size: 2vw;
+}
+
+.texto-sobre-imagen h2{
+	text-align: center; 
+	color: #FFFAFA;
+	font-size: 1vw;
+}
+
+.Modulo1 img {
+	width: 100%;
+}
+
+
+
+.Modulo2 {
+	width: 100%;
+	
+}
+
+.Modulo3 {
+	width: 100%;
+}
+
+.imagen1{
+	width: 46.15%;
+	display: inline-block;
+	margin: 2% 0.5% 2.5% 0%;
+	position: relative;
+	
+	
+}
+.imagen1 img{
+	width: 100%;
+	
+	
+	
+}
+.imagen2{
+	width: 24%;
+	display: inline-block;
+	margin: 2% 0.5% 2.5% 0;
+	position: relative;
+	
+}
+.imagen2 img{
+	width: 100%;	
+}
+
+@media screen and (max-width: 800px){
+	.imagen1 {
+		width: 100%;
+	}
+	.imagen2 {
+		width: 48.6%;
+	}
+}
+
+
