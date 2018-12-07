@@ -1,78 +1,128 @@
 body{
 	width: 100%;
-	background-color: white;
 }
+
 .contenedor {
 	width: 80%;
 	margin: 7px auto;
 }
+
+/* Texto en imagenes del modulo 2 y 3 */
 .texto-sobre-imagen{
 	width: 100%;
 	margin-top: auto;
 	position: absolute;
-	top: 70%;
-
+	top: 50%;
 }
 
+/* Titulos */
 .texto-sobre-imagen h1{
 	text-align: center;
 	color: #FFFAFA;
 	font-size: 2vw;
 }
 
+/* Subtitulos */
 .texto-sobre-imagen h2{
 	text-align: center; 
 	color: #FFFAFA;
 	font-size: 1vw;
 }
 
-.Modulo1 img {
-	width: 100%;
-}
-
-
-
-.Modulo2 {
-	width: 100%;
-	
-}
-
-.Modulo3 {
-	width: 100%;
-}
-
-.imagen1{
+/* Imagen grande del modulo 3 */
+.imagengrande {
 	width: 46.15%;
 	display: inline-block;
 	margin: 2% 0.5% 2.5% 0%;
-	position: relative;
-	
-	
+	position: relative;	
 }
-.imagen1 img{
-	width: 100%;
-	
-	
-	
-}
-.imagen2{
-	width: 24%;
-	display: inline-block;
-	margin: 2% 0.5% 2.5% 0;
-	position: relative;
-	
-}
-.imagen2 img{
+
+/* Mantener responsiva la imagen grande para que no se pegue a las otras */
+.imagengrande img{
 	width: 100%;	
 }
 
-@media screen and (max-width: 800px){
-	.imagen1 {
+/* Imagenes chicas del modulo 3 */
+.imagenchica {
+	width: 24%;
+	display: inline-block;
+	margin: 2% 0.5% 2.5% 0;
+	position: relative;	
+}
+
+/* Mantener responsivas las imagenes chicas para que no se peguen a las otras */
+.imagenchica img{
+	width: 100%;	
+}
+
+/* Media querie para el acomodo de imagenes en pantallas chicas, 
+el top y bottom es para cambiar posición de la imagen con titulo 6 */
+@media screen and (max-width: 768px){
+	.imagengrande {
 		width: 100%;
-	}
-	.imagen2 {
+		top: -48vw;
+	}	
+	.imagenchica {
 		width: 48.6%;
+		bottom: -50vw;
 	}
+}
+
+/* CSS para el modulo dos en Bootstrap */
+.col-xs-6 {
+  padding-right:0.5% !important;
+  margin: 2% 0% 0% 0%;
+}
+
+.col-xs-12 {
+  padding-right: 0.5% !important;
+  margin: 2% 0% 0% 0%;
+}
+
+.col-s-3 {
+  padding-right:0.5% !important;
+  margin: 2% 0% 0% 0%;
+}
+
+.col-s-6 {
+  padding-right: 0.5% !important;
+  margin: 2% 0% 0% 0%;
+}
+
+.col-md-3 {
+  padding-right:0.5% !important;
+  padding-left: 0.5% !important;
+  margin: 2% 0% 0% 0%;
+}
+
+.col-md-6 {
+  padding-right: 0.5% !important;
+  padding-left: 1.5%% !important;
+  margin: 2% 0% 0% 0%;
+}
+
+.col-lg-3 {
+  padding-right: 0.5% !important;
+  padding-left: 0.5% !important;
+  margin: 2% 0% 0% 0%;
+}
+
+.col-lg-6 {
+  padding-right: 0.5% !important;
+  padding-left: 1.5% !important;
+  margin: 2% 0% 0% 0%;
+}
+
+.col-xl-3 {
+  padding-right: 0.5% !important;
+  padding-left: 0.5% !important;
+  margin: 2% 0% 0% 0%;
+}
+
+.col-xl-6 {
+  padding-right: 0.5% !important;
+  padding-left: 1.5% !important;
+  margin: 2% 0% 0% 0%;
 }
 
 

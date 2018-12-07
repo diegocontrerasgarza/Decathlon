@@ -1,99 +1,123 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <meta charset="utf-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Decathlon</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-  <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
-</head>
+	<head>
+		  <meta charset="utf-8" />
+		  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+		  <title>Decathlon</title>
+		  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<body>
-  
-<div class="contenedor">
+		  <link rel="stylesheet" type="text/css" media="screen" href="main.css">
 
-  <div class="Modulo1">
-    <img src="images/slider_principal.jpg" alt="decathlon">
-  </div>
+		  <!-- Links de Bootstrap y Javascript -->
+		  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+		  <!-- jQuery, hace que funcione la animación del modulo 1 -->
+		  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+		  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+	</head>
+
+	<body>
+	  
+		<div class="contenedor">
+
+			 <div class="Modulo1">
+				<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+				    
+					    <!-- Indicadores -->
+					      <ol class="carousel-indicators">
+					        <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+					        <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+					      </ol>
+
+				      <!-- Imagenes -->
+				    <div class="carousel-inner" role="listbox">
+					        <div class="item active">
+					          <img src="images/slider_principal.jpg" alt="Slider">
+					        </div>
+				        
+				        <div class="item">
+				          <img src="images/slider_principal.jpg" alt="Slider">
+				        </div>
+				    </div>
+
+				    <!-- Controles -->
+					    <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+					      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+					      <span class="sr-only">Previous</span>
+					    </a>
+
+					    <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+					      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+					      <span class="sr-only">Next</span>
+					    </a>
+				</div>
+			 </div>
 
 
+			  	<div class="Modulo2">
+				    <div class="row">
+				        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 col-xl-6"><img class="img-responsive" src="images/imagen1.jpg">
+				        	<div class="texto-sobre-imagen">
+					    		<h1>TITULO 1</h1>
+					    		<h2>SUBTITULO</h2>
+				    		</div>
+				    	</div>
 
-  <div class="Modulo2">
-    <div class="imagen1">
-    	<img src="images/imagen1.jpg" alt="decathlon">
-    	
-    	<div class="texto-sobre-imagen">
-    		<h1 style="font-size: 2vw;">TITULO 1</h1>
-    		<h2 style="font-size: 1vw;">SUBTITULO</h2>
-    	</div>
+				        <div class="col-xs-6 col-sm-3 col-md-3 col-lg-3 col-xl-3"><img class="img-responsive" src="images/imagen2.jpg">
+				        	<div class="texto-sobre-imagen">
+						    	<h1>TITULO 2</h1>
+						    	<h2>SUBTITULO</h2>
+					    	</div>
+						</div>
 
-    </div>
-    
+				        <div class="col-xs-6 col-sm-3 col-md-3 col-lg-3 col-xl-3"><img class="img-responsive" src="images/imagen3.jpg">
+				        	<div class="texto-sobre-imagen">
+					    		<h1>TITULO 3</h1>
+					    		<h2>SUBTITULO</h2>
+				    		</div>
+				    	</div>
+				    </div>
+			    
+			  	</div>
 
 
-    <div class="imagen2">
-    	<img src="images/imagen2.jpg" alt="decathlon">
+			  <div class="Modulo3">
+			
+					<div class="imagenchica">   	
+						<img src="images/imagen4.jpg" alt="decathlon">
+						    	
+						    	<div class="texto-sobre-imagen">
+						    		<h1>TITULO 4</h1>
+						    		<h2>SUBTITULO</h2>
+						    	</div>
 
-	    <div class="texto-sobre-imagen">
-	    	<h1>TITULO 2</h1>
-	    	<h2>SUBTITULO</h2>
-	    </div>
+					</div>
+					    
 
-    </div>
+					<div class="imagenchica">
+						    	<img src="images/imagen5.jpg" alt="decathlon">
+						    	
+						    	<div class="texto-sobre-imagen">
+						    		<h1>TITULO 5</h1>
+						    		<h2>SUBTITULO</h2>
+						    	</div>
 
-    
-    <div class="imagen2">
-    	<img src="images/imagen3.jpg" alt="decathlon">
-    	
-    	<div class="texto-sobre-imagen">
-    		<h1>TITULO 3</h1>
-    		<h2>SUBTITULO</h2>
-    	</div>
+					</div>
+					    
 
-    </div>
-    
-    
-  </div>
+					<div class="imagengrande">
+						    	<img src="images/imagen6.jpg" alt="decathlon">
+						    	
+						    	<div class="texto-sobre-imagen">
+						    		<h1>TITULO 6</h1>
+						    		<h2>SUBTITULO</h2>
+						    	</div>
 
-  <div class="Modulo3">
-    <div class="imagen2">
-    	
-    	<img src="images/imagen4.jpg" alt="decathlon">
-    	
-    	<div class="texto-sobre-imagen">
-    		<h1>TITULO 4</h1>
-    		<h2>SUBTITULO</h2>
-    	</div>
+					</div>
+			    
+			  </div>
 
-    </div>
-    
-
-    <div class="imagen2">
-    	<img src="images/imagen5.jpg" alt="decathlon">
-    	
-    	<div class="texto-sobre-imagen">
-    		<h1>TITULO 5</h1>
-    		<h2>SUBTITULO</h2>
-    	</div>
-
-    </div>
-    
-
-    <div class="imagen1">
-    	<img src="images/imagen6.jpg" alt="decathlon">
-    	
-    	<div class="texto-sobre-imagen">
-    		<h1>TITULO 6</h1>
-    		<h2>SUBTITULO</h2>
-    	</div>
-
-    </div>
-    
-  </div>
-
-</div>
-  
-</body>
+		</div>
+	</body>
 </html>
